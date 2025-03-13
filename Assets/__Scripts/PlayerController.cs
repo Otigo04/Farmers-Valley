@@ -12,6 +12,7 @@ public class MovementScript : MonoBehaviour
     {
         // Hole das Rigidbody2D-Komponente des GameObjects
         rb = GetComponent<Rigidbody2D>();
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
     [System.Obsolete]
